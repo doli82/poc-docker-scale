@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    image: doli82/docker-scale
+    build:
+      context: .
+      dockerfile: ./POC.Docker.Scale/Dockerfile
+      network: host
+    ports:
+      - "8000:80"
